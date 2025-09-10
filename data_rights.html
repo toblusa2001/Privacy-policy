@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Subject Rights - Chubby's Road of Trials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+        }
+        .lang-selector {
+            margin-bottom: 20px;
+        }
+        .lang-selector button {
+            margin-right: 10px;
+            padding: 6px 12px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .lang-block { display: none; }
+        .lang-block.active { display: block; }
+    </style>
+</head>
+<body>
+    <h1>Data Subject Rights</h1>
+
+    <div class="lang-selector">
+        <button onclick="switchLang('ru')">Русский</button>
+        <button onclick="switchLang('en')">English</button>
+        <button onclick="switchLang('zh')">中文</button>
+    </div>
+
+    <div id="ru" class="lang-block active">
+        <h2>Права субъекта персональных данных</h2>
+        <p>Вы имеете право:</p>
+        <ul>
+            <li>Запросить удаление ваших данных;</li>
+            <li>Запросить исправление или ограничение обработки данных;</li>
+            <li>Возразить против обработки данных сторонними сервисами (например, рекламой);</li>
+            <li>Получить информацию о том, какие данные обрабатываются.</li>
+        </ul>
+        <p>Для реализации этих прав вы можете связаться с нами: <strong>sanek272001@gmail.com</strong></p>
+        <p><strong>Дата обновления:</strong> 19.07.2025</p>
+    </div>
+
+    <div id="en" class="lang-block">
+        <h2>Data Subject Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+            <li>Request deletion of your data;</li>
+            <li>Request correction or restriction of data processing;</li>
+            <li>Object to data processing by third-party services (e.g., ads);</li>
+            <li>Obtain information about the data being processed.</li>
+        </ul>
+        <p>To exercise these rights, please contact us at: <strong>sanek272001@gmail.com</strong></p>
+        <p><strong>Last updated:</strong> July 19, 2025</p>
+    </div>
+
+    <div id="zh" class="lang-block">
+        <h2>数据主体权利</h2>
+        <p>您有权：</p>
+        <ul>
+            <li>请求删除您的数据；</li>
+            <li>请求更正或限制数据处理；</li>
+            <li>反对第三方服务（例如广告）对数据的处理；</li>
+            <li>获取正在处理的数据的信息。</li>
+        </ul>
+        <p>要行使这些权利，请通过以下方式联系我们：<strong>sanek272001@gmail.com</strong></p>
+        <p><strong>更新日期：</strong> 2025年7月19日</p>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.querySelectorAll('.lang-block').forEach(el => el.classList.remove('active'));
+            document.getElementById(lang).classList.add('active');
+        }
+    </script>
+</body>
+</html>
