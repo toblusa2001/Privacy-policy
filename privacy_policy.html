@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy - Chubby's Road of Trials</title>
+  <title>Privacy Policy - Chubby: Road of Trials</title>
   <style>
     body{font-family:Arial,Helvetica,sans-serif;max-width:860px;margin:32px auto;padding:0 20px;line-height:1.6}
     .lang-selector{margin:16px 0 24px;display:flex;gap:8px;flex-wrap:wrap}
@@ -32,7 +32,11 @@
   <!-- RU -->
   <div id="ru" class="lang-block active" role="tabpanel" aria-labelledby="btn-ru">
     <h2>Политика конфиденциальности</h2>
-    <p>Мобильная игра «Chubby's Road of Trials» уважает конфиденциальность пользователей. Мы не запрашиваем регистрацию и не создаём пользовательские аккаунты. Игровой прогресс хранится локально на устройстве.</p>
+    <p>Настоящая политика конфиденциальности относится к мобильной игре 
+      <strong>«Chubby: Road of Trials»</strong> (в некоторых магазинах, например RuStore и AppGallery, игра может называться 
+      <strong>«Chubby's Road of Trials»</strong>).
+    </p>
+    <p>Мы уважаем конфиденциальность пользователей. Игра не требует регистрации и не создаёт аккаунтов. Игровой прогресс хранится локально на устройстве.</p>
 
     <h3>Сторонние SDK</h3>
     <p>В приложении используются следующие сторонние SDK:</p>
@@ -79,19 +83,16 @@
     <h3>Контакты</h3>
     <p>По вопросам конфиденциальности: <a href="mailto:sanek272001@gmail.com">sanek272001@gmail.com</a></p>
     <p class="meta"><strong>Дата обновления:</strong> 04.10.2025</p>
-
-    <details>
-      <summary>Примечание</summary>
-      <div class="note">
-        Точные перечни собираемых полей и политика обработки могут меняться со стороны поставщиков SDK. Актуальные сведения см. в официальных документах AppMetrica и Yandex Ads.
-      </div>
-    </details>
   </div>
 
   <!-- EN -->
   <div id="en" class="lang-block" role="tabpanel" aria-labelledby="btn-en">
     <h2>Privacy Policy</h2>
-    <p>The mobile game “Chubby’s Road of Trials” respects user privacy. We do not require registration or create user accounts. Game progress is stored locally on the device.</p>
+    <p>This privacy policy applies to the mobile game 
+      <strong>“Chubby: Road of Trials”</strong> (in some stores such as RuStore and AppGallery the game may appear as 
+      <strong>“Chubby's Road of Trials”</strong>).
+    </p>
+    <p>We respect user privacy. The game does not require registration or user accounts. Game progress is stored locally on the device.</p>
 
     <h3>Third-party SDKs</h3>
     <ul>
@@ -137,19 +138,13 @@
     <h3>Contact</h3>
     <p>Email: <a href="mailto:sanek272001@gmail.com">sanek272001@gmail.com</a></p>
     <p class="meta"><strong>Last updated:</strong> Oct 4, 2025</p>
-
-    <details>
-      <summary>Note</summary>
-      <div class="note">
-        Exact field lists and processing practices may change by SDK providers. For the latest details, refer to the official AppMetrica and Yandex Ads documentation.
-      </div>
-    </details>
   </div>
 
   <!-- ZH -->
   <div id="zh" class="lang-block" role="tabpanel" aria-labelledby="btn-zh">
     <h2>隐私政策</h2>
-    <p>《Chubby's Road of Trials》重视用户隐私。我们不要求注册或创建账户。游戏进度仅保存在用户设备本地。</p>
+    <p>本隐私政策适用于移动游戏<strong>《Chubby: Road of Trials》</strong>（在某些商店如 RuStore 和 AppGallery 中，可能显示为<strong>《Chubby's Road of Trials》</strong>）。</p>
+    <p>我们重视用户隐私。游戏不需要注册，也不创建用户账户。游戏进度仅保存在用户设备本地。</p>
 
     <h3>第三方 SDK</h3>
     <ul>
@@ -195,13 +190,6 @@
     <h3>联系方式</h3>
     <p>邮箱：<a href="mailto:sanek272001@gmail.com">sanek272001@gmail.com</a></p>
     <p class="meta"><strong>更新日期：</strong> 2025年10月4日</p>
-
-    <details>
-      <summary>说明</summary>
-      <div class="note">
-        具体字段与处理方式可能由 SDK 提供方调整。请以 AppMetrica 与 Yandex Ads 官方文档为准。
-      </div>
-    </details>
   </div>
 
   <script>
@@ -209,20 +197,18 @@
     ids.forEach(id=>{
       const btn = document.getElementById("btn-"+id);
       btn.addEventListener("click", ()=>{
-        // tabs
         document.querySelectorAll(".lang-selector button").forEach(b=>{
           b.classList.remove("active");
           b.setAttribute("aria-selected","false");
         });
         btn.classList.add("active");
         btn.setAttribute("aria-selected","true");
-        // blocks
         document.querySelectorAll(".lang-block").forEach(el=>el.classList.remove("active"));
         document.getElementById(id).classList.add("active");
-        // update html lang
         document.documentElement.lang = id === "ru" ? "ru" : (id === "zh" ? "zh" : "en");
       });
     });
   </script>
 </body>
 </html>
+
