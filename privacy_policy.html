@@ -15,221 +15,142 @@
     h2{margin-top:20px;margin-bottom:8px}
     ul{margin:8px 0 8px 20px}
     .meta{color:#777}
-    .note{background:#f7f7f7;border:1px solid #e6e6e6;border-radius:8px;padding:10px 12px}
-    code{background:#f2f2f2;padding:1px 4px;border-radius:4px}
-    details{margin:8px 0}
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
 
-  <div class="lang-selector" role="tablist" aria-label="Language selector">
-    <button id="btn-ru" type="button" role="tab" aria-controls="ru" aria-selected="true" class="active">Русский</button>
-    <button id="btn-en" type="button" role="tab" aria-controls="en" aria-selected="false">English</button>
-    <button id="btn-zh" type="button" role="tab" aria-controls="zh" aria-selected="false">中文</button>
-  </div>
+<h1>Privacy Policy</h1>
 
-  <!-- RU -->
-  <div id="ru" class="lang-block active" role="tabpanel" aria-labelledby="btn-ru">
-    <h2>Политика конфиденциальности</h2>
-    <p>Настоящая политика конфиденциальности относится к мобильной игре <strong>«Chubby: Road of Trials»</strong> (в некоторых магазинах, например RuStore и AppGallery, игра может называться <strong>«Chubby's Road of Trials»</strong>).</p>
-    <p>Мы уважаем конфиденциальность пользователей. Игра не требует регистрации и не создаёт аккаунтов. Игровой прогресс хранится локально на устройстве.</p>
+<div class="lang-selector">
+  <button class="active" onclick="setLang('ru')">Русский</button>
+  <button onclick="setLang('en')">English</button>
+  <button onclick="setLang('zh')">中文</button>
+</div>
 
-    <h3>Сторонние SDK</h3>
-    <p>В приложении используются следующие сторонние SDK:</p>
-    <ul>
-      <li><strong>AppMetrica</strong> (аналитика и диагностика);</li>
-      <li><strong>Appodeal Ads Pro</strong> (посредник/медиация для показа рекламы). Через Appodeal могут отображаться объявления от разных рекламных сетей и партнёров-поставщиков, в том числе от <em>Яндекс Рекламной сети</em>, если она доступна в регионе и включена в конфигурации приложения.</li>
-    </ul>
-    <p>Указанные SDK могут собирать и передавать обезличенные технические данные на серверы соответствующих поставщиков и их партнёров для целей, описанных ниже.</p>
+<!-- RU -->
+<div id="ru" class="lang-block active">
+<h2>Политика конфиденциальности</h2>
 
-    <h3>Категории данных, которые могут обрабатываться</h3>
-    <ul>
-      <li><strong>Идентификаторы</strong>: рекламный идентификатор устройства (например, GAID), идентификаторы SDK (например, AppMetrica Device ID), технические идентификаторы ОС и/или партнёров по медиации (частью Appodeal).</li>
-      <li><strong>Примерное местоположение</strong>: на уровне города/региона (определяется по IP/сети; GPS и точные координаты не используются).</li>
-      <li><strong>Действия в приложении</strong>: события использования (запуск приложения/уровня, длительность сессий, базовые игровые события), агрегированные метрики эффективности рекламы (показы, клики, вознаграждённые просмотры).</li>
-      <li><strong>Диагностика и отчёты об ошибках</strong>: сведения о сбоях, версии ОС/приложения, модели устройства и т. п.</li>
-      <li><strong>Технические параметры для показа рекламы</strong>: частота показов (frequency capping), борьба с мошенничеством, атрибуция установки/показа, определение страны/языка интерфейса.</li>
-    </ul>
+<p>Настоящая политика конфиденциальности применяется к мобильной игре <strong>«Chubby: Road of Trials»</strong>.</p>
 
-    <h3>Цели обработки</h3>
-    <ul>
-      <li><strong>Аналитика</strong>: измерение использования, улучшение стабильности и производительности (AppMetrica).</li>
-      <li><strong>Реклама и медиация</strong>: показ рекламы через Appodeal, измерение эффективности кампаний (например, вознаграждённые видео/межстраничные), частотное ограничение и антифрод; при наличии и в зависимости от юрисдикции — персонализация/неперсонализированная реклама по выбору пользователя.</li>
-      <li><strong>Безопасность</strong>: защита рекламной сети и трафика, предотвращение злоупотреблений.</li>
-    </ul>
+<p>Мы уважаем конфиденциальность пользователей. Игра не требует регистрации и не создаёт пользовательских аккаунтов. Игровой прогресс хранится локально на устройстве.</p>
 
-    <h3>Передача и защита данных</h3>
-    <ul>
-      <li>Передача данных третьим лицам (поставщикам SDK и их партнёрам по рекламе/аналитике) может осуществляться для целей, указанных выше.</li>
-      <li>Данные передаются по <strong>зашифрованным каналам</strong> (например, HTTPS).</li>
-    </ul>
+<h3>Используемые сторонние SDK</h3>
+<ul>
+  <li><strong>Google AdMob</strong> (показ рекламы), реализован через плагин <strong>AdMob Goodies (+Mediation)</strong> для Unreal Engine;</li>
+  <li><strong>AppMetrica</strong> (аналитика и диагностика).</li>
+</ul>
 
-    <h3>Хранение, контроль и удаление</h3>
-    <ul>
-      <li>Сроки и правила хранения определяются соответствующими поставщиками SDK.</li>
-      <li>Мы не обрабатываем персональные данные напрямую и не храним их на наших серверах.</li>
-      <li>Удаление обезличенных данных, собираемых сторонними SDK, напрямую в приложении недоступно. По вопросам приватности свяжитесь с нами по email ниже — мы постараемся передать запрос соответствующему поставщику.</li>
-    </ul>
+<h3>Категории данных</h3>
+<ul>
+  <li><strong>Идентификаторы</strong>: рекламный идентификатор устройства (GAID), идентификаторы SDK;</li>
+  <li><strong>Примерное местоположение</strong>: страна или регион (по IP, без GPS);</li>
+  <li><strong>Действия в приложении</strong>: события использования, рекламные показы и вознаграждённые просмотры;</li>
+  <li><strong>Диагностика</strong>: сбои, версия ОС, модель устройства.</li>
+</ul>
 
-    <h3>Согласие, настройки и выбор</h3>
-    <ul>
-      <li>В регионах, где это требуется (например, ЕЭЗ/Великобритания), приложение может отображать запрос согласия на обработку данных для рекламы/аналитики. Выбор влияет на персонализацию рекламы, но не отключает её полностью.</li>
-      <li>Вы можете <strong>сбросить рекламный идентификатор</strong> и/или <strong>ограничить персонализацию рекламы</strong> в настройках устройства (Android: Настройки → Google → Реклама / Конфиденциальность).</li>
-      <li>Отключение интернета ограничит загрузку рекламных материалов и отправку аналитики.</li>
-    </ul>
+<h3>Цели обработки</h3>
+<ul>
+  <li>Показ рекламы (персонализированной или неперсонализированной);</li>
+  <li>Аналитика и улучшение качества приложения;</li>
+  <li>Обеспечение безопасности и предотвращение мошенничества.</li>
+</ul>
 
-    <h3>Дети</h3>
-    <p>Игра не ориентирована на детей младше 13 лет. Если вы родитель/опекун и считаете, что ребёнок предоставил данные через приложение, свяжитесь с нами — мы предпримем соответствующие меры.</p>
+<h3>GDPR / EEA / Великобритания</h3>
+<p>В регионах Европейской экономической зоны (ЕЭЗ) и Великобритании приложение может запрашивать согласие пользователя на обработку данных для персонализированной рекламы в соответствии с GDPR. Пользователь может выбрать неперсонализированную рекламу.</p>
 
-    <h3>Контакты</h3>
-    <p>По вопросам конфиденциальности: <a href="mailto:sanek272001@gmail.com">sanek272001@gmail.com</a></p>
-    <p class="meta"><strong>Дата обновления:</strong> 27.10.2025</p>
-  </div>
+<h3>CCPA / CPRA (США, Калифорния)</h3>
+<p>Мы не продаём персональные данные пользователей. Пользователи могут отказаться от персонализированной рекламы, используя настройки устройства или параметры конфиденциальности Google.</p>
 
-  <!-- EN -->
-  <div id="en" class="lang-block" role="tabpanel" aria-labelledby="btn-en">
-    <h2>Privacy Policy</h2>
-    <p>This privacy policy applies to the mobile game <strong>“Chubby: Road of Trials”</strong> (in some stores such as RuStore and AppGallery the game may appear as <strong>“Chubby's Road of Trials”</strong>).</p>
-    <p>We respect user privacy. The game does not require registration or user accounts. Game progress is stored locally on the device.</p>
+<h3>Отказ от персонализации рекламы</h3>
+<p>Вы можете отключить персонализированную рекламу в настройках устройства Android: <em>Настройки → Google → Реклама → Ограничить персонализацию</em>.</p>
 
-    <h3>Third‑party SDKs</h3>
-    <ul>
-      <li><strong>AppMetrica</strong> (analytics & diagnostics);</li>
-      <li><strong>Appodeal Ads Pro</strong> (ad mediation). Appodeal may serve ads from multiple ad networks and supply partners, including the <em>Yandex Advertising Network</em> where available and enabled in the app configuration.</li>
-    </ul>
-    <p>These SDKs may collect and transmit de‑identified technical data to their servers (and their integrated partners) for the purposes described below.</p>
+<h3>Передача данных</h3>
+<p>Данные могут передаваться Google и AppMetrica в соответствии с их политиками конфиденциальности:</p>
+<ul>
+  <li>Google Privacy Policy: https://policies.google.com/privacy</li>
+  <li>AppMetrica Privacy Policy: https://yandex.com/legal/metrica_termsofuse</li>
+</ul>
 
-    <h3>Data categories that may be processed</h3>
-    <ul>
-      <li><strong>Identifiers</strong>: advertising ID (e.g., GAID), SDK identifiers (e.g., AppMetrica Device ID), OS/device identifiers and/or mediation partner identifiers (as part of Appodeal).</li>
-      <li><strong>Approximate location</strong>: city/region level (derived from IP/network; no GPS precise coordinates).</li>
-      <li><strong>App activity</strong>: usage events (app/level start, session duration, basic gameplay), aggregated ad performance metrics (impressions, clicks, rewarded views).</li>
-      <li><strong>Diagnostics & crash reports</strong>: crashes, OS/app version, device model, etc.</li>
-      <li><strong>Ad delivery parameters</strong>: frequency capping, anti‑fraud, attribution of installs/impressions, country/locale detection.</li>
-    </ul>
+<h3>Дети</h3>
+<p>Игра не предназначена для детей младше 13 лет.</p>
 
-    <h3>Purposes</h3>
-    <ul>
-      <li><strong>Analytics</strong>: usage measurement, stability and performance improvements (AppMetrica).</li>
-      <li><strong>Advertising & mediation</strong>: ad serving via Appodeal, effectiveness measurement (e.g., rewarded/interstitial), frequency capping and anti‑fraud; where required and depending on jurisdiction, personalized vs. non‑personalized ads based on user choice.</li>
-      <li><strong>Security</strong>: protection of ad networks and traffic, abuse prevention.</li>
-    </ul>
+<h3>Контакты</h3>
+<p>Email: <a href="mailto:sanek272001@gmail.com">sanek272001@gmail.com</a></p>
+<p class="meta"><strong>Дата обновления:</strong> 23.12.2025</p>
+</div>
 
-    <h3>Data transfer & security</h3>
-    <ul>
-      <li>Data may be transferred to third parties (SDK providers and their ad/analytics partners) for the purposes above.</li>
-      <li>Data is transmitted over <strong>encrypted</strong> channels (e.g., HTTPS).</li>
-    </ul>
+<!-- EN -->
+<div id="en" class="lang-block">
+<h2>Privacy Policy</h2>
 
-    <h3>Retention, control & deletion</h3>
-    <ul>
-      <li>Retention periods and policies are defined by the SDK providers.</li>
-      <li>We do not directly process personal data nor store it on our servers.</li>
-      <li>Deletion of de‑identified data collected by third‑party SDKs is not available in‑app. For privacy inquiries, contact us and we will do our best to forward the request to the relevant provider.</li>
-    </ul>
+<p>This privacy policy applies to the mobile game <strong>“Chubby: Road of Trials”</strong>.</p>
 
-    <h3>Consent & your choices</h3>
-    <ul>
-      <li>In regions where required (e.g., EEA/UK), the app may display a consent prompt for analytics/advertising. Your choice may affect ad personalization but not the presence of ads.</li>
-      <li>You can <strong>reset your advertising ID</strong> and/or <strong>limit ad personalization</strong> in device settings (Android: Settings → Google → Ads / Privacy).</li>
-      <li>Disabling internet connectivity may limit ad loading and analytics transmission.</li>
-    </ul>
+<p>The game does not require registration and does not create user accounts. Game progress is stored locally on the device.</p>
 
-    <h3>Children</h3>
-    <p>The game is not directed to children under 13. If you are a parent/guardian and believe a child has provided data via the app, please contact us so we can take appropriate action.</p>
+<h3>Third-party SDKs</h3>
+<ul>
+  <li><strong>Google AdMob</strong> (advertising), integrated via <strong>AdMob Goodies (+Mediation)</strong> plugin;</li>
+  <li><strong>AppMetrica</strong> (analytics and diagnostics).</li>
+</ul>
 
-    <h3>Contact</h3>
-    <p>Email: <a href="mailto:sanek272001@gmail.com">sanek272001@gmail.com</a></p>
-    <p class="meta"><strong>Last updated:</strong> Oct 27, 2025</p>
-  </div>
+<h3>Data collected</h3>
+<ul>
+  <li>Advertising ID (GAID);</li>
+  <li>Approximate location (country/region);</li>
+  <li>App usage and ad interaction data;</li>
+  <li>Crash and diagnostic information.</li>
+</ul>
 
-  <!-- ZH -->
-  <div id="zh" class="lang-block" role="tabpanel" aria-labelledby="btn-zh">
-    <h2>隐私政策</h2>
-    <p>本隐私政策适用于移动游戏<strong>《Chubby: Road of Trials》</strong>（在部分商店如 RuStore、AppGallery 中，可能显示为<strong>《Chubby's Road of Trials》</strong>）。</p>
-    <p>我们重视用户隐私。游戏无需注册，也不创建用户账户。游戏进度仅保存在用户设备本地。</p>
+<h3>Purposes</h3>
+<ul>
+  <li>Advertising (personalized or non-personalized);</li>
+  <li>Analytics and app improvement;</li>
+  <li>Fraud prevention and security.</li>
+</ul>
 
-    <h3>第三方 SDK</h3>
-    <ul>
-      <li><strong>AppMetrica</strong>（分析与诊断）；</li>
-      <li><strong>Appodeal Ads Pro</strong>（广告聚合/中介）。通过 Appodeal，应用可能展示来自多个广告网络与供给方的广告；在可用且已启用的地区，也可能包含<em>Yandex 广告网络</em>。</li>
-    </ul>
-    <p>上述 SDK 可能为下述目的收集并向其服务器（及其集成合作伙伴）传输去标识的技术数据。</p>
+<h3>GDPR / EEA / UK</h3>
+<p>Users in the EEA and UK may be asked for consent regarding personalized advertising in accordance with GDPR.</p>
 
-    <h3>可能处理的数据类别</h3>
-    <ul>
-      <li><strong>标识符</strong>：广告标识（如 GAID）、SDK 标识（如 AppMetrica 设备 ID）、操作系统/设备标识以及（作为 Appodeal 一部分的）中介合作伙伴标识。</li>
-      <li><strong>大致位置</strong>：城市/区域级（基于 IP/网络；不使用 GPS 精准坐标）。</li>
-      <li><strong>应用活动</strong>：使用事件（应用/关卡启动、会话时长、基础玩法）、广告效果汇总指标（展示、点击、激励观看）。</li>
-      <li><strong>诊断与崩溃报告</strong>：崩溃、系统/应用版本、设备型号等。</li>
-      <li><strong>广告投放参数</strong>：频控、反作弊、归因、国家/语言识别。</li>
-    </ul>
+<h3>CCPA / CPRA (California)</h3>
+<p>We do not sell personal data. Users may opt out of ad personalization through device or Google settings.</p>
 
-    <h3>处理目的</h3>
-    <ul>
-      <li><strong>分析</strong>：度量使用情况，改进稳定性与性能（AppMetrica）。</li>
-      <li><strong>广告与聚合</strong>：通过 Appodeal 展示广告与评估效果（如激励/插屏）、频控与反作弊；在法律要求且因地区而异的情况下，依据用户选择展示个性化或非个性化广告。</li>
-      <li><strong>安全</strong>：保护广告网络与流量，防止滥用。</li>
-    </ul>
+<h3>Contact</h3>
+<p>Email: <a href="mailto:sanek272001@gmail.com">sanek272001@gmail.com</a></p>
+<p class="meta"><strong>Last updated:</strong> December 23, 2025</p>
+</div>
 
-    <h3>传输与安全</h3>
-    <ul>
-      <li>为实现上述目的，数据可能传输至第三方（SDK 提供方及其广告/分析合作伙伴）。</li>
-      <li>数据通过<strong>加密</strong>通道传输（例如 HTTPS）。</li>
-    </ul>
+<!-- ZH -->
+<div id="zh" class="lang-block">
+<h2>隐私政策</h2>
 
-    <h3>保留、控制与删除</h3>
-    <ul>
-      <li>数据保留期限与策略由相应 SDK 提供方确定。</li>
-      <li>我们不直接处理个人数据，也不在我们的服务器上存储。</li>
-      <li>应用内不提供删除第三方 SDK 收集的去标识数据功能。若有隐私相关请求，请通过邮箱联系我们，我们将尽力转交至相应提供方。</li>
-    </ul>
+<p>本隐私政策适用于移动游戏<strong>《Chubby: Road of Trials》</strong>。</p>
 
-    <h3>同意与您的选择</h3>
-    <ul>
-      <li>在法律要求的地区（例如欧盟/英国），应用可能展示同意提示以用于分析/广告。您的选择可能影响广告个性化，但不影响广告是否展示。</li>
-      <li>可在设备设置中<strong>重置广告标识</strong>并/或<strong>限制个性化广告</strong>（Android：设置 → Google → 广告/隐私）。</li>
-      <li>关闭网络连接可能限制广告加载与分析数据上传。</li>
-    </ul>
+<p>游戏无需注册，所有进度仅保存在用户设备本地。</p>
 
-    <h3>儿童</h3>
-    <p>本游戏并非面向 13 岁以下儿童。如您是监护人并认为儿童通过本应用提供了数据，请与我们联系，我们会采取相应措施。</p>
+<h3>第三方 SDK</h3>
+<ul>
+  <li><strong>Google AdMob</strong>（广告展示，通过 AdMob Goodies 插件）；</li>
+  <li><strong>AppMetrica</strong>（分析与诊断）。</li>
+</ul>
 
-    <h3>联系方式</h3>
-    <p>邮箱：<a href="mailto:sanek272001@gmail.com">sanek272001@gmail.com</a></p>
-    <p class="meta"><strong>更新日期：</strong> 2025年10月27日</p>
-  </div>
+<h3>数据用途</h3>
+<p>用于广告展示、分析、应用改进和安全防护。</p>
 
-  <script>
-  (function(){
-    function setLang(id){
-      document.querySelectorAll('.lang-selector button').forEach(b=>{
-        b.classList.remove('active');
-        b.setAttribute('aria-selected','false');
-      });
-      const btn = document.querySelector('.lang-selector button[aria-controls="'+id+'"]');
-      if(btn){
-        btn.classList.add('active');
-        btn.setAttribute('aria-selected','true');
-      }
-      document.querySelectorAll('.lang-block').forEach(el=>el.classList.remove('active'));
-      const panel = document.getElementById(id);
-      if(panel){ panel.classList.add('active'); }
-      document.documentElement.lang = id === 'ru' ? 'ru' : (id === 'zh' ? 'zh' : 'en');
-    }
+<h3>儿童</h3>
+<p>本应用不面向 13 岁以下儿童。</p>
 
-    // Event delegation for robustness
-    const tabs = document.querySelector('.lang-selector');
-    if(tabs){
-      tabs.addEventListener('click', function(e){
-        const btn = e.target.closest('button[aria-controls]');
-        if(!btn) return;
-        const id = btn.getAttribute('aria-controls');
-        if(id) setLang(id);
-      });
-    }
-  })();
+<h3>联系方式</h3>
+<p>邮箱：<a href="mailto:sanek272001@gmail.com">sanek272001@gmail.com</a></p>
+<p class="meta"><strong>更新日期：</strong> 2025年12月23日</p>
+</div>
+
+<script>
+function setLang(id){
+  document.querySelectorAll('.lang-block').forEach(b=>b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
 </script>
+
 </body>
 </html>
