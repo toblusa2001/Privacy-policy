@@ -13,8 +13,10 @@
     .lang-block.active{display:block}
     h1{margin-bottom:8px}
     h2{margin-top:20px;margin-bottom:8px}
+    h3{margin-top:16px;margin-bottom:6px}
     ul{margin:8px 0 8px 20px}
     .meta{color:#777}
+    .note{background:#fafafa;border:1px solid #eee;border-radius:12px;padding:12px 14px;margin:12px 0}
   </style>
 </head>
 
@@ -51,16 +53,13 @@
   <li>
     <strong>Google AdMob</strong> — показ рекламы
     (интеграция осуществляется через плагин
-    <strong>AdMob Goodies (+Mediation)</strong> для Unreal Engine);
-  </li>
-  <li>
-    <strong>AppMetrica</strong> — аналитика, диагностика и отчёты об ошибках.
+    <strong>AdMob Goodies (+Mediation)</strong> для Unreal Engine).
   </li>
 </ul>
 
 <h3>Категории данных</h3>
 <ul>
-  <li><strong>Идентификаторы</strong>: рекламный идентификатор устройства (GAID), идентификаторы SDK;</li>
+  <li><strong>Идентификаторы</strong>: рекламный идентификатор устройства (GAID на Android / IDFA на iOS при наличии разрешения), идентификаторы SDK;</li>
   <li><strong>Примерное местоположение</strong>: страна или регион (определяется по IP; без GPS);</li>
   <li><strong>Действия в приложении</strong>: события использования, рекламные показы, вознаграждённые просмотры;</li>
   <li><strong>Диагностика</strong>: сведения о сбоях, версии ОС и приложения, модель устройства.</li>
@@ -69,9 +68,24 @@
 <h3>Цели обработки</h3>
 <ul>
   <li>Показ рекламы (персонализированной или неперсонализированной);</li>
-  <li>Аналитика и улучшение стабильности приложения;</li>
+  <li>Аналитика в рамках рекламных SDK и улучшение стабильности приложения;</li>
   <li>Обеспечение безопасности и предотвращение мошенничества.</li>
 </ul>
+
+<h3>iOS: App Tracking Transparency (ATT)</h3>
+<div class="note">
+  <p>
+    На устройствах iOS приложение может запрашивать разрешение через
+    <strong>App Tracking Transparency</strong> для доступа к рекламному идентификатору
+    <strong>IDFA</strong>. Это используется рекламными сетями (например, AdMob) для
+    персонализации рекламы и измерения эффективности.
+  </p>
+  <p>
+    Если пользователь <strong>не разрешит</strong> отслеживание, приложение продолжит
+    показывать рекламу, но она может быть <strong>неперсонализированной</strong>, а IDFA
+    не будет доступен приложению и рекламным SDK.
+  </p>
+</div>
 
 <h3>GDPR (ЕЭЗ и Великобритания)</h3>
 <p>
@@ -86,7 +100,7 @@
 Мы не продаём и не передаём персональные данные пользователей третьим лицам
 в понимании законодательства штата Калифорния.
 Пользователь может отказаться от персонализации рекламы
-через настройки устройства или аккаунта Google.
+через настройки устройства или аккаунта Google / Apple.
 </p>
 
 <h3>Передача данных</h3>
@@ -96,7 +110,6 @@
 </p>
 <ul>
   <li>Google Privacy Policy: https://policies.google.com/privacy</li>
-  <li>AppMetrica Privacy Policy: https://yandex.com/legal/metrica_termsofuse</li>
 </ul>
 
 <h3>Дети</h3>
@@ -106,7 +119,7 @@
 
 <h3>Контакты</h3>
 <p>Email: <a href="mailto:sanek272001@gmail.com">sanek272001@gmail.com</a></p>
-<p class="meta"><strong>Дата обновления:</strong> 23.12.2025</p>
+<p class="meta"><strong>Дата обновления:</strong> 02.03.2026</p>
 </div>
 
 <!-- EN -->
@@ -128,31 +141,57 @@ Game progress is stored locally on the user’s device.
 
 <h3>Third-party SDKs</h3>
 <ul>
-  <li><strong>Google AdMob</strong> (advertising), integrated via <strong>AdMob Goodies (+Mediation)</strong>;</li>
-  <li><strong>AppMetrica</strong> (analytics and diagnostics).</li>
+  <li><strong>Google AdMob</strong> (advertising), integrated via <strong>AdMob Goodies (+Mediation)</strong>.</li>
 </ul>
 
-<h3>Data usage</h3>
-<p>
-Data may be used for advertising, analytics, fraud prevention,
-and improving application stability.
-</p>
+<h3>Data categories</h3>
+<ul>
+  <li><strong>Identifiers</strong>: advertising identifier (GAID on Android / IDFA on iOS if permission is granted), SDK identifiers;</li>
+  <li><strong>Approximate location</strong>: country/region inferred from IP (no GPS);</li>
+  <li><strong>In-app activity</strong>: usage events, ad impressions, rewarded ad views;</li>
+  <li><strong>Diagnostics</strong>: crash reports, OS/app version, device model.</li>
+</ul>
+
+<h3>Purposes</h3>
+<ul>
+  <li>Showing ads (personalized or non-personalized);</li>
+  <li>Improving app stability and preventing fraud/security issues.</li>
+</ul>
+
+<h3>iOS: App Tracking Transparency (ATT)</h3>
+<div class="note">
+  <p>
+    On iOS, the app may request permission via <strong>App Tracking Transparency</strong>
+    to access the advertising identifier (<strong>IDFA</strong>). Ad networks (such as AdMob)
+    may use it for ad personalization and measurement.
+  </p>
+  <p>
+    If you <strong>do not allow</strong> tracking, ads may still be shown, but they can be
+    <strong>non-personalized</strong>, and IDFA will not be available.
+  </p>
+</div>
 
 <h3>GDPR / EEA / UK</h3>
 <p>
 Users in the EEA and the UK may be asked to provide consent
 for personalized advertising in accordance with GDPR.
+Users can choose non-personalized ads.
 </p>
 
 <h3>CCPA / CPRA</h3>
 <p>
 We do not sell personal data. Users may opt out of ad personalization
-through Google or device privacy settings.
+through Google/Apple or device privacy settings.
 </p>
+
+<h3>Data sharing</h3>
+<ul>
+  <li>Google Privacy Policy: https://policies.google.com/privacy</li>
+</ul>
 
 <h3>Contact</h3>
 <p>Email: <a href="mailto:sanek272001@gmail.com">sanek272001@gmail.com</a></p>
-<p class="meta"><strong>Last updated:</strong> December 23, 2025</p>
+<p class="meta"><strong>Last updated:</strong> March 2, 2026</p>
 </div>
 
 <!-- ZH -->
@@ -169,29 +208,55 @@ through Google or device privacy settings.
 </p>
 
 <p>
-游戏无需注册，所有进度仅保存在用户设备本地。
+游戏无需注册，也不会创建用户账号。
+游戏进度仅保存在用户设备本地。
 </p>
 
 <h3>第三方 SDK</h3>
 <ul>
-  <li><strong>Google AdMob</strong>（广告展示，通过 AdMob Goodies 插件）；</li>
-  <li><strong>AppMetrica</strong>（分析与诊断）。</li>
+  <li><strong>Google AdMob</strong>（广告展示，通过 <strong>AdMob Goodies（+Mediation）</strong> 插件集成）。</li>
 </ul>
 
-<h3>儿童</h3>
-<p>
-本游戏不面向 13 岁以下儿童。
-</p>
+<h3>数据类别</h3>
+<ul>
+  <li><strong>标识符</strong>：广告标识符（Android 为 GAID；iOS 在获得授权时为 IDFA）、SDK 标识符；</li>
+  <li><strong>大致位置</strong>：通过 IP 推断的国家/地区（不使用 GPS）；</li>
+  <li><strong>应用内行为</strong>：使用事件、广告展示、激励广告观看；</li>
+  <li><strong>诊断信息</strong>：崩溃信息、系统/应用版本、设备型号。</li>
+</ul>
+
+<h3>使用目的</h3>
+<ul>
+  <li>展示广告（个性化或非个性化）；</li>
+  <li>提升应用稳定性，安全与反作弊。</li>
+</ul>
+
+<h3>iOS：App Tracking Transparency（ATT）</h3>
+<div class="note">
+  <p>
+    在 iOS 设备上，应用可能会通过 <strong>App Tracking Transparency（ATT）</strong>
+    请求权限以访问广告标识符 <strong>IDFA</strong>。广告网络（如 AdMob）可能会使用该信息进行广告个性化与效果衡量。
+  </p>
+  <p>
+    若您<strong>拒绝</strong>授权，应用仍可展示广告，但可能为<strong>非个性化广告</strong>，且无法使用 IDFA。
+  </p>
+</div>
 
 <h3>联系方式</h3>
 <p>邮箱：<a href="mailto:sanek272001@gmail.com">sanek272001@gmail.com</a></p>
-<p class="meta"><strong>更新日期：</strong> 2025年12月23日</p>
+<p class="meta"><strong>更新日期：</strong> 2026年3月2日</p>
 </div>
 
 <script>
 function setLang(id){
+  // blocks
   document.querySelectorAll('.lang-block').forEach(b=>b.classList.remove('active'));
   document.getElementById(id).classList.add('active');
+
+  // buttons
+  document.querySelectorAll('.lang-selector button').forEach(btn=>btn.classList.remove('active'));
+  const btn = document.getElementById('btn-' + id);
+  if (btn) btn.classList.add('active');
 }
 </script>
 
