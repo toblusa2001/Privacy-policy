@@ -36,96 +36,104 @@
 <p>
 Настоящая политика конфиденциальности относится к мобильной игре
 <strong>«Chubby: Road of Trials»</strong>.
-В некоторых магазинах приложений (например, RuStore и AppGallery)
-игра может распространяться под названием
+В некоторых магазинах приложений игра может распространяться под названием
 <strong>«Chubby's Road of Trials»</strong>.
 </p>
 
 <p>
-Мы уважаем конфиденциальность пользователей. Игра не требует регистрации
-и не создаёт пользовательских аккаунтов. Игровой прогресс хранится
-локально на устройстве пользователя.
+Мы уважаем конфиденциальность пользователей. Игровой прогресс может храниться
+локально на устройстве пользователя. Для работы онлайн-функций может использоваться
+авторизация через Epic Account Services.
 </p>
 
-<h3>Сторонние SDK</h3>
-<p>В приложении используются следующие сторонние SDK:</p>
+<h3>Сторонние SDK и сервисы</h3>
 <ul>
-  <li>
-    <strong>Google AdMob</strong> — показ рекламы
-    (интеграция осуществляется через плагин
-    <strong>AdMob Goodies (+Mediation)</strong> для Unreal Engine).
-  </li>
-  <li>
-    <strong>Tenjin</strong> — аналитика и измерение эффективности рекламных кампаний
-    (Mobile Measurement Partner, MMP). Используется для анализа источников
-    установок приложения и оценки эффективности рекламных кампаний.
-  </li>
+  <li><strong>Google AdMob</strong> — показ рекламы.</li>
+  <li><strong>Tenjin</strong> — аналитика и измерение эффективности рекламных кампаний.</li>
+  <li><strong>Epic Online Services (EOS) / Epic Account Services (EAS)</strong> — онлайн-функции, вход пользователя, создание и подключение к игровым сессиям.</li>
 </ul>
 
 <h3>Категории данных</h3>
 <ul>
-  <li><strong>Идентификаторы</strong>: рекламный идентификатор устройства (GAID на Android / IDFA на iOS при наличии разрешения), идентификаторы SDK;</li>
-  <li><strong>Примерное местоположение</strong>: страна или регион (определяется по IP; без GPS);</li>
-  <li><strong>Действия в приложении</strong>: события использования, рекламные показы, вознаграждённые просмотры;</li>
-  <li><strong>Диагностика</strong>: сведения о сбоях, версии ОС и приложения, модель устройства.</li>
+  <li><strong>Идентификаторы</strong>: GAID на Android, IDFA на iOS при наличии разрешения, SDK identifiers, Epic Account ID;</li>
+  <li><strong>Примерное местоположение</strong>: страна или регион по IP, без GPS;</li>
+  <li><strong>Действия в приложении</strong>: игровые события, рекламные показы, rewarded ads, события использования;</li>
+  <li><strong>Онлайн-данные</strong>: данные игровых сессий, лобби, подключения, сетевые технические данные;</li>
+  <li><strong>Диагностика</strong>: сбои, версия ОС, версия приложения, модель устройства.</li>
 </ul>
 
 <h3>Цели обработки</h3>
 <ul>
-  <li>Показ рекламы (персонализированной или неперсонализированной);</li>
-  <li>Аналитика в рамках рекламных SDK и улучшение стабильности приложения;</li>
-  <li>Обеспечение безопасности и предотвращение мошенничества.</li>
+  <li>Показ рекламы;</li>
+  <li>Аналитика и оценка эффективности рекламных кампаний;</li>
+  <li>Создание и подключение к онлайн-сессиям;</li>
+  <li>Аутентификация пользователей для онлайн-функций;</li>
+  <li>Улучшение стабильности приложения;</li>
+  <li>Предотвращение мошенничества и обеспечение безопасности.</li>
 </ul>
+
+<h3>Epic Online Services (EOS)</h3>
+<p>
+Для многопользовательского режима приложение использует Epic Online Services
+и Epic Account Services. При использовании онлайн-функций Epic Games может
+обрабатывать идентификаторы учетной записи Epic, данные сессий, лобби,
+подключения и другую техническую информацию, необходимую для работы
+многопользовательских функций.
+</p>
 
 <h3>iOS: App Tracking Transparency (ATT)</h3>
 <div class="note">
   <p>
-    На устройствах iOS приложение может запрашивать разрешение через
-    <strong>App Tracking Transparency</strong> для доступа к рекламному идентификатору
-    <strong>IDFA</strong>. Это используется рекламными сетями (например, AdMob) для
-    персонализации рекламы и измерения эффективности.
+    На iOS приложение может запрашивать разрешение через
+    <strong>App Tracking Transparency</strong> для доступа к IDFA.
+    Это может использоваться рекламными сетями для персонализации рекламы
+    и измерения эффективности.
   </p>
   <p>
-    Если пользователь <strong>не разрешит</strong> отслеживание, приложение продолжит
-    показывать рекламу, но она может быть <strong>неперсонализированной</strong>, а IDFA
-    не будет доступен приложению и рекламным SDK.
+    Если пользователь не разрешит отслеживание, приложение продолжит показывать
+    рекламу, но она может быть неперсонализированной.
   </p>
 </div>
 
-<h3>GDPR (ЕЭЗ и Великобритания)</h3>
+<h3>GDPR / ЕЭЗ / Великобритания</h3>
 <p>
-В регионах Европейской экономической зоны (ЕЭЗ) и Великобритании
-приложение может запрашивать согласие пользователя на обработку данных
-для персонализированной рекламы в соответствии с требованиями GDPR.
-Пользователь может выбрать показ неперсонализированной рекламы.
+В ЕЭЗ и Великобритании приложение может запрашивать согласие пользователя
+на обработку данных для персонализированной рекламы. Пользователь может выбрать
+неперсонализированную рекламу.
 </p>
 
-<h3>CCPA / CPRA (США)</h3>
+<h3>CCPA / CPRA</h3>
 <p>
-Мы не продаём и не передаём персональные данные пользователей третьим лицам
-в понимании законодательства штата Калифорния.
-Пользователь может отказаться от персонализации рекламы
-через настройки устройства или аккаунта Google / Apple.
+Мы не продаём персональные данные пользователей. Пользователь может отказаться
+от персонализации рекламы через настройки устройства, Google или Apple.
 </p>
 
 <h3>Передача данных</h3>
 <p>
-Обработка данных осуществляется в соответствии с политиками
-соответствующих поставщиков SDK:
+Некоторые данные могут передаваться сторонним поставщикам услуг, включая
+Google AdMob, Tenjin и Epic Games, только для целей рекламы, аналитики,
+аутентификации, онлайн-сессий, безопасности и предотвращения мошенничества.
 </p>
 <ul>
   <li>Google Privacy Policy: https://policies.google.com/privacy</li>
   <li>Tenjin Privacy Policy: https://www.tenjin.com/privacy/</li>
+  <li>Epic Games Privacy Policy: https://www.epicgames.com/site/privacypolicy</li>
 </ul>
 
-<h3>Дети</h3>
+<h3>Хранение данных</h3>
 <p>
-Игра не предназначена для детей младше 13 лет.
+Данные могут храниться сторонними поставщиками SDK и сервисов в течение срока,
+необходимого для предоставления рекламы, аналитики, онлайн-функций,
+безопасности, предотвращения мошенничества и соблюдения юридических обязательств.
+Срок хранения определяется политиками соответствующих поставщиков услуг.
 </p>
+
+<h3>Дети</h3>
+<p>Игра не предназначена для детей младше 13 лет.</p>
 
 <h3>Контакты</h3>
 <p>Email: <a href="mailto:sanek272001@gmail.com">sanek272001@gmail.com</a></p>
-<p class="meta"><strong>Дата обновления:</strong> 04.03.2026</p>
+<p class="meta"><strong>Дата обновления:</strong> 23.05.2026</p>
 </div>
 
 <!-- EN -->
@@ -135,71 +143,101 @@
 <p>
 This privacy policy applies to the mobile game
 <strong>“Chubby: Road of Trials”</strong>.
-In some app stores (such as RuStore and AppGallery),
-the game may be published under the name
+In some app stores, the game may be published as
 <strong>“Chubby's Road of Trials”</strong>.
 </p>
 
 <p>
-The game does not require registration or user accounts.
-Game progress is stored locally on the user’s device.
+We respect user privacy. Game progress may be stored locally on the user’s device.
+Online features may require authentication through Epic Account Services.
 </p>
 
-<h3>Third-party SDKs</h3>
+<h3>Third-party SDKs and services</h3>
 <ul>
-  <li><strong>Google AdMob</strong> (advertising), integrated via <strong>AdMob Goodies (+Mediation)</strong>.</li>
-  <li><strong>Tenjin</strong> — mobile analytics and advertising attribution service (Mobile Measurement Partner, MMP) used to measure advertising campaign effectiveness and analyze installation sources.</li>
+  <li><strong>Google AdMob</strong> — advertising.</li>
+  <li><strong>Tenjin</strong> — analytics and advertising attribution.</li>
+  <li><strong>Epic Online Services (EOS) / Epic Account Services (EAS)</strong> — online multiplayer, user authentication, game sessions and lobbies.</li>
 </ul>
 
 <h3>Data categories</h3>
 <ul>
-  <li><strong>Identifiers</strong>: advertising identifier (GAID on Android / IDFA on iOS if permission is granted), SDK identifiers;</li>
-  <li><strong>Approximate location</strong>: country/region inferred from IP (no GPS);</li>
-  <li><strong>In-app activity</strong>: usage events, ad impressions, rewarded ad views;</li>
-  <li><strong>Diagnostics</strong>: crash reports, OS/app version, device model.</li>
+  <li><strong>Identifiers</strong>: GAID on Android, IDFA on iOS if permission is granted, SDK identifiers, Epic Account ID;</li>
+  <li><strong>Approximate location</strong>: country or region inferred from IP, no GPS;</li>
+  <li><strong>In-app activity</strong>: gameplay events, ad impressions, rewarded ad views, usage events;</li>
+  <li><strong>Online data</strong>: session data, lobby data, connection data and technical network information;</li>
+  <li><strong>Diagnostics</strong>: crashes, OS version, app version and device model.</li>
 </ul>
 
-<h3>Purposes</h3>
+<h3>Purposes of processing</h3>
 <ul>
-  <li>Showing ads (personalized or non-personalized);</li>
-  <li>Improving app stability and preventing fraud/security issues.</li>
+  <li>Showing ads;</li>
+  <li>Analytics and advertising campaign measurement;</li>
+  <li>Creating and joining online game sessions;</li>
+  <li>User authentication for online features;</li>
+  <li>Improving app stability;</li>
+  <li>Fraud prevention and security.</li>
 </ul>
+
+<h3>Epic Online Services (EOS)</h3>
+<p>
+The application uses Epic Online Services and Epic Account Services to provide
+multiplayer functionality, authentication, game sessions and lobbies.
+When using online features, Epic Games may process Epic account identifiers,
+session/lobby information, connection data and technical information required
+for multiplayer functionality.
+</p>
 
 <h3>iOS: App Tracking Transparency (ATT)</h3>
 <div class="note">
   <p>
     On iOS, the app may request permission via <strong>App Tracking Transparency</strong>
-    to access the advertising identifier (<strong>IDFA</strong>). Ad networks (such as AdMob)
-    may use it for ad personalization and measurement.
+    to access the advertising identifier IDFA. Advertising networks may use it
+    for ad personalization and measurement.
   </p>
   <p>
-    If you <strong>do not allow</strong> tracking, ads may still be shown, but they can be
-    <strong>non-personalized</strong>, and IDFA will not be available.
+    If tracking is not allowed, ads may still be shown, but they may be
+    non-personalized.
   </p>
 </div>
 
 <h3>GDPR / EEA / UK</h3>
 <p>
-Users in the EEA and the UK may be asked to provide consent
-for personalized advertising in accordance with GDPR.
-Users can choose non-personalized ads.
+Users in the EEA and the UK may be asked to provide consent for personalized
+advertising. Users may choose non-personalized ads.
 </p>
 
 <h3>CCPA / CPRA</h3>
 <p>
-We do not sell personal data. Users may opt out of ad personalization
-through Google/Apple or device privacy settings.
+We do not sell personal data. Users may opt out of ad personalization through
+device, Google or Apple privacy settings.
 </p>
 
 <h3>Data sharing</h3>
+<p>
+Some data may be shared with third-party service providers, including Google
+AdMob, Tenjin and Epic Games, only for advertising, analytics, authentication,
+online sessions, security and fraud prevention.
+</p>
 <ul>
   <li>Google Privacy Policy: https://policies.google.com/privacy</li>
   <li>Tenjin Privacy Policy: https://www.tenjin.com/privacy/</li>
+  <li>Epic Games Privacy Policy: https://www.epicgames.com/site/privacypolicy</li>
 </ul>
+
+<h3>Data retention</h3>
+<p>
+Data may be retained by third-party SDK and service providers for as long as
+necessary to provide advertising, analytics, online functionality, security,
+fraud prevention and legal compliance. Retention periods are determined by the
+policies of the respective service providers.
+</p>
+
+<h3>Children</h3>
+<p>The game is not intended for children under the age of 13.</p>
 
 <h3>Contact</h3>
 <p>Email: <a href="mailto:sanek272001@gmail.com">sanek272001@gmail.com</a></p>
-<p class="meta"><strong>Last updated:</strong> March 4, 2026</p>
+<p class="meta"><strong>Last updated:</strong> May 23, 2026</p>
 </div>
 
 <!-- ZH -->
@@ -209,51 +247,97 @@ through Google/Apple or device privacy settings.
 <p>
 本隐私政策适用于移动游戏
 <strong>《Chubby: Road of Trials》</strong>。
-在部分应用商店（如 RuStore、AppGallery）中，
-游戏可能以
+在部分应用商店中，游戏可能以
 <strong>《Chubby's Road of Trials》</strong>
 名称发布。
 </p>
 
 <p>
-游戏无需注册，也不会创建用户账号。
-游戏进度仅保存在用户设备本地。
+我们尊重用户隐私。游戏进度可能会保存在用户设备本地。
+在线功能可能需要通过 Epic Account Services 进行身份验证。
 </p>
 
-<h3>第三方 SDK</h3>
+<h3>第三方 SDK 和服务</h3>
 <ul>
-  <li><strong>Google AdMob</strong>（广告展示，通过 <strong>AdMob Goodies（+Mediation）</strong> 插件集成）。</li>
-  <li><strong>Tenjin</strong>（移动分析与广告归因服务，Mobile Measurement Partner，MMP），用于分析应用安装来源并评估广告活动效果。</li>
+  <li><strong>Google AdMob</strong> — 广告展示。</li>
+  <li><strong>Tenjin</strong> — 分析和广告归因。</li>
+  <li><strong>Epic Online Services (EOS) / Epic Account Services (EAS)</strong> — 在线多人游戏、用户身份验证、游戏会话和大厅。</li>
 </ul>
 
 <h3>数据类别</h3>
 <ul>
-  <li><strong>标识符</strong>：广告标识符（Android 为 GAID；iOS 在获得授权时为 IDFA）、SDK 标识符；</li>
-  <li><strong>大致位置</strong>：通过 IP 推断的国家/地区（不使用 GPS）；</li>
-  <li><strong>应用内行为</strong>：使用事件、广告展示、激励广告观看；</li>
-  <li><strong>诊断信息</strong>：崩溃信息、系统/应用版本、设备型号。</li>
+  <li><strong>标识符</strong>：Android 上的 GAID、iOS 上经授权的 IDFA、SDK 标识符、Epic Account ID；</li>
+  <li><strong>大致位置</strong>：通过 IP 推断的国家或地区，不使用 GPS；</li>
+  <li><strong>应用内活动</strong>：游戏事件、广告展示、激励广告观看、使用事件；</li>
+  <li><strong>在线数据</strong>：游戏会话数据、大厅数据、连接数据和网络技术信息；</li>
+  <li><strong>诊断信息</strong>：崩溃信息、系统版本、应用版本和设备型号。</li>
 </ul>
 
-<h3>使用目的</h3>
+<h3>处理目的</h3>
 <ul>
-  <li>展示广告（个性化或非个性化）；</li>
-  <li>提升应用稳定性，安全与反作弊。</li>
+  <li>展示广告；</li>
+  <li>分析和衡量广告活动效果；</li>
+  <li>创建和加入在线游戏会话；</li>
+  <li>为在线功能进行用户身份验证；</li>
+  <li>提升应用稳定性；</li>
+  <li>防止欺诈并保障安全。</li>
 </ul>
+
+<h3>Epic Online Services (EOS)</h3>
+<p>
+本应用使用 Epic Online Services 和 Epic Account Services
+来提供多人游戏功能、身份验证、游戏会话和大厅。
+使用在线功能时，Epic Games 可能会处理 Epic 账户标识符、
+会话/大厅信息、连接数据以及多人游戏功能所需的技术信息。
+</p>
 
 <h3>iOS：App Tracking Transparency（ATT）</h3>
 <div class="note">
   <p>
-    在 iOS 设备上，应用可能会通过 <strong>App Tracking Transparency（ATT）</strong>
-    请求权限以访问广告标识符 <strong>IDFA</strong>。广告网络（如 AdMob）可能会使用该信息进行广告个性化与效果衡量。
+    在 iOS 设备上，应用可能会通过 <strong>App Tracking Transparency</strong>
+    请求访问广告标识符 IDFA。广告网络可能会使用该信息进行广告个性化和效果衡量。
   </p>
   <p>
-    若您<strong>拒绝</strong>授权，应用仍可展示广告，但可能为<strong>非个性化广告</strong>，且无法使用 IDFA。
+    如果用户拒绝跟踪，应用仍可展示广告，但广告可能是非个性化的。
   </p>
 </div>
 
+<h3>GDPR / EEA / UK</h3>
+<p>
+在欧洲经济区和英国，应用可能会请求用户同意用于个性化广告的数据处理。
+用户可以选择非个性化广告。
+</p>
+
+<h3>CCPA / CPRA</h3>
+<p>
+我们不会出售个人数据。用户可以通过设备、Google 或 Apple 的隐私设置
+选择退出广告个性化。
+</p>
+
+<h3>数据共享</h3>
+<p>
+某些数据可能会与第三方服务提供商共享，包括 Google AdMob、Tenjin
+和 Epic Games，仅用于广告、分析、身份验证、在线会话、安全和防止欺诈。
+</p>
+<ul>
+  <li>Google Privacy Policy: https://policies.google.com/privacy</li>
+  <li>Tenjin Privacy Policy: https://www.tenjin.com/privacy/</li>
+  <li>Epic Games Privacy Policy: https://www.epicgames.com/site/privacypolicy</li>
+</ul>
+
+<h3>数据保留</h3>
+<p>
+第三方 SDK 和服务提供商可能会在提供广告、分析、在线功能、安全、
+防止欺诈以及遵守法律义务所需的期间内保留数据。
+具体保留期限由相应服务提供商的政策决定。
+</p>
+
+<h3>儿童</h3>
+<p>本游戏不面向 13 岁以下儿童。</p>
+
 <h3>联系方式</h3>
 <p>邮箱：<a href="mailto:sanek272001@gmail.com">sanek272001@gmail.com</a></p>
-<p class="meta"><strong>更新日期：</strong> 2026年3月4日</p>
+<p class="meta"><strong>更新日期：</strong> 2026年5月23日</p>
 </div>
 
 <script>
